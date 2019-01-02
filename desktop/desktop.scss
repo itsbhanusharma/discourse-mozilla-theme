@@ -6,14 +6,10 @@
         padding: 0;
     }
 
-    .contents {
-        margin: 15px 0;
-    }
-
     .title {
         margin: -15px 0;
         margin-right: 20px;
-        padding: 20px;
+        padding: 0 20px;
         border-right: 1px solid #cfcfcf;
 
     }
@@ -33,17 +29,17 @@
     .icons {
         margin: 0;
 
+        .icon, .icon:hover, .active .icon {
+            border: none;
+            border-left: 1px solid #cfcfcf;
+        }
+
         .icon {
             margin: -15px 0;
             padding: 20px;
             color: #000;
 
-            &, &:hover {
-                border: none;
-                border-left: 1px solid #cfcfcf;
-            }
-
-            i, .avatar {
+            &, i {
                 height: 30px;
                 width: 30px;
             }
@@ -62,7 +58,7 @@
             padding: 15px;
         }
 
-        .avatar {
+        .icon, .avatar {
             height: 40px;
             width: 40px;
         }
@@ -128,10 +124,15 @@
 }
 
 .d-header .extra-info-wrapper {
-    overflow: visible;
-    margin-top: -15px;
 
     .title-wrapper {
+
+        .categories-wrapper {
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 70px;
+        }
 
         .badge-wrapper {
             margin: 0;
@@ -150,14 +151,8 @@
             }
 
             &:last-of-type {
-                position: fixed;
-                width: 100%;
-                top: 70px;
+                flex-grow: 1;
             }
-        }
-
-        h1 {
-            overflow: hidden;
         }
 
 /* Increase font size of titles in header */
