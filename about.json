@@ -1,8 +1,8 @@
 {
-  "name": "moz://a",
-  "about_url": "https://github.com/mozilla/discourse-mozilla-theme",
-  "license_url": "https://github.com/mozilla/discourse-mozilla-theme/blob/master/LICENSE",
-  "color_schemes": {
+  "name": "discourse-ex",
+  "about_url": "https://github.com/itsbhanusharma/discourse-theme-ex",
+  "license_url": "https://github.com/itsbhanusharma/discourse-theme-ex/blob/master/LICENSE",
+  "discourse-ex": {
     "moz://a": {
       "primary": "000000",
       "secondary": "ffffff",
